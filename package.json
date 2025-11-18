@@ -2,10 +2,13 @@
   "name": "app_rmht",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
-    "start": "next start"
+    "start": "next start",
+    "lint": "tsc --noEmit",
+    "test": "node --test \"tests/**/*.test.js\""
   },
   "dependencies": {
     "react": "19.1.0",
